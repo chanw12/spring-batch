@@ -19,6 +19,9 @@ public class BatchTest {
     @Autowired
     private JobLauncherTestUtils hello3JobLauncherTestUtils;
 
+    @Autowired
+    private JobLauncherTestUtils hello4JobLauncherTestUtils;
+
     @DisplayName("helloJob")
     @Test
     public void t1() throws Exception {
@@ -35,6 +38,12 @@ public class BatchTest {
     @Test
     public void t3() throws Exception {
         hello3JobLauncherTestUtils.launchJob();
+    }
+
+    @DisplayName("hello4Job")
+    @Test
+    public void t4() throws Exception {
+        hello4JobLauncherTestUtils.launchJob();
     }
 }
 
